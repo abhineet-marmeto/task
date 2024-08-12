@@ -1,0 +1,155 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(52, 52, 52);
+  color: azure;
+}
+
+#carousel-container {
+  width: 80vw;
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid white;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.splide__slide {
+  display: flex;
+  border-radius: 25px;
+  height: 80dvh;
+  background-size: cover;
+  position: relative;
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  padding: 10px 30px;
+  margin: 30px;
+  color: white;
+  align-items: center;
+}
+
+#dropdown-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  gap: 5px;
+}
+
+#position-select {
+  border-radius: 5px;
+  padding: 2px 5px;
+  outline: none;
+}
+
+.top-left {
+  justify-content: start;
+  align-items: start;
+}
+
+.top-center {
+  justify-content: center;
+  align-items: start;
+}
+
+.top-right {
+  justify-content: end;
+  align-items: start;
+}
+
+.middle-left {
+  justify-content: start;
+  align-items: center;
+}
+
+.middle-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.middle-right {
+  justify-content: end;
+  align-items: center;
+}
+
+.bottom-left {
+  justify-content: start;
+  align-items: end;
+}
+
+.bottom-center {
+  justify-content: center;
+  align-items: end;
+}
+
+.bottom-right {
+  justify-content: end;
+  align-items: end;
+}
+
+.custom-arrows {
+  position: absolute;
+  bottom: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.splide__arrow {
+  background-color: dimgray;
+  color: rgb(255, 255, 255);
+  border: none;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+  margin: 0 10px;
+}
+
+.splide__arrow--next {
+  left: 52%;
+}
+
+
+.splide__arrow--prev {
+  left: 44%;
+}
+
+#title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 2px solid rgb(251, 135, 58);
+  border-radius: 20px;
+  width: fit-content;
+  padding: 5px;
+}
+
+#title span {
+  border: 4px solid;
+  border-radius: 50%;
+  padding: 0%;
+}
+
+.button {
+  background-color: rgb(255, 102, 0);
+  padding: 6px 10px;
+  border-radius: 15px;
+  color: cornsilk;
+  text-decoration: none;
+  width: fit-content;
+  margin: 2px;
+}
+
+.button:hover {
+  border: 1px solid wheat;
+}
